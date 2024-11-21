@@ -13,8 +13,7 @@
     </header>
 
     <main class="profile-container">
-        <div class="profile-card">
-            <!-- Foto de perfil -->
+        <div class="profile-box">
             <div class="profile-photo">
                 <img src="imagenes/foto_perfil.jpg" alt="Foto de Perfil" id="fotoPerfil">
             </div>
@@ -25,12 +24,22 @@
                 <p><strong>Ciudad:</strong> Bogotá</p>
                 <p><strong>Hobby:</strong> Fútbol</p>
 
+                <div class="rating-section">
+                    <h3>Calificación del Usuario:</h3>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                    </div>
+                </div>
+
                 <div class="reviews">
                     <h3>Reseñas:</h3>
                     <textarea placeholder="Deja tu reseña sobre este usuario" id="reseña" rows="4"></textarea>
                     <button onclick="agregarReseña()">Agregar Reseña</button>
 
-                    <!-- Reseñas de otros usuarios -->
                     <div class="reseñas-list">
                         <p><strong>Juan:</strong> Excelente jugador, siempre puntual.</p>
                         <p><strong>Ana:</strong> Muy buena persona, y un excelente compañero.</p>
@@ -50,7 +59,6 @@
     </footer>
 
     <script>
-        // Función para agregar reseña
         function agregarReseña() {
             var reseña = document.getElementById('reseña').value;
             if (reseña) {

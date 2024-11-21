@@ -1,95 +1,125 @@
-/* Contenedor del perfil */
+/* Estilo base para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
 .profile-container {
     display: flex;
     justify-content: center;
-    padding: 2rem;
-    background-color: #f0f0f0;
-    min-height: 100vh;
+    padding: 20px;
 }
 
-/* Estilo de la tarjeta de perfil */
 .profile-card {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
 }
 
-/* Foto de perfil */
 .profile-photo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .profile-photo img {
+    border-radius: 50%;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ddd;
 }
 
-/* Detalles del perfil */
+.profile-details {
+    margin-top: 20px;
+}
+
 .profile-details h2 {
-    text-align: center;
-    color: #007BFF;
+    font-size: 24px;
+    color: #333;
 }
 
 .profile-details p {
-    font-size: 1rem;
-    margin: 0.5rem 0;
+    font-size: 16px;
+    color: #555;
 }
 
-/* Reseñas */
-.reviews {
-    margin-top: 1.5rem;
+.reviews, .event-registrations {
+    margin-top: 20px;
 }
 
 .reviews textarea {
     width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .reviews button {
-    background-color: #007BFF;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
     color: white;
     border: none;
-    padding: 0.8rem;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 1rem;
-    width: 100%;
 }
 
 .reviews button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilo para las reseñas de los demás usuarios */
-.reseñas-list {
-    margin-top: 1rem;
-    padding: 1rem;
-    background-color: #f9f9f9;
-    border-radius: 8px;
+    background-color: #444;
 }
 
 .reseñas-list p {
-    margin: 0.5rem 0;
-}
-
-/* Estilo para la sección de eventos */
-.event-registrations {
-    margin-top: 1.5rem;
+    margin: 5px 0;
+    font-size: 14px;
 }
 
 .event-registrations p {
-    font-size: 1rem;
+    font-size: 16px;
+    color: #555;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilo para las estrellas de calificación */
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: #ddd;
+    cursor: pointer;
+}
+
+.star-rating input:checked ~ label {
+    color: gold;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: gold;
 }
 
