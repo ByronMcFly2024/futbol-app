@@ -1,0 +1,95 @@
+/* Contenedor del perfil */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+}
+
+/* Estilo de la tarjeta de perfil */
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Foto de perfil */
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+/* Detalles del perfil */
+.profile-details h2 {
+    text-align: center;
+    color: #007BFF;
+}
+
+.profile-details p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Reseñas */
+.reviews {
+    margin-top: 1.5rem;
+}
+
+.reviews textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.reviews button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.reviews button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para las reseñas de los demás usuarios */
+.reseñas-list {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.reseñas-list p {
+    margin: 0.5rem 0;
+}
+
+/* Estilo para la sección de eventos */
+.event-registrations {
+    margin-top: 1.5rem;
+}
+
+.event-registrations p {
+    font-size: 1rem;
+}
+
