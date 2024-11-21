@@ -10,54 +10,45 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Botones de acceso */
-.access-buttons {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    display: flex;
-    gap: 0.5rem;
-}
-
-.access-buttons button {
-    padding: 0.5rem 1rem;
+/* Estilos de los botones */
+button {
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    background-color: #c0f013;
-    color: rgb(8, 8, 8);
+    background-color: #4CAF50;
+    color: white;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-.access-buttons button:hover {
-    background-color: #0056b3;
+button:hover {
+    background-color: #45a049;
 }
 
 /* Header */
 .header {
-    background-color: #007BFF;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 20px;
+}
+
+.header img {
+    width: 150px;
+    height: auto;
 }
 
 .header-buttons {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 10px;
 }
 
 .header-buttons button {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    background-color: white;
-    color: #007BFF;
-    cursor: pointer;
+    background-color: #555;
 }
 
 .header-buttons button:hover {
-    background-color: #f4f4f4;
+    background-color: #666;
 }
 
 /* Eventos */
@@ -76,6 +67,12 @@ body {
     overflow: hidden;
     text-align: center;
     width: calc(25% - 1rem);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
 }
 
 .event-card img {
@@ -92,18 +89,23 @@ body {
     color: #555;
 }
 
-/* Perfil */
-.profile-container {
-    padding: 2rem;
-    background: white;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 2rem auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.event-details {
+    margin-top: 1rem;
+    color: #444;
 }
 
-.profile-info, .profile-rating, .profile-reviews {
-    margin-bottom: 1.5rem;
+.event-details p {
+    font-size: 0.9em;
+    margin: 5px 0;
 }
 
-
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -78,3 +78,11 @@
     color: white;
     margin-top: 2rem;
 }
+
+
+.h1  {
+    width: 300px;  /* Cambia el ancho a 300 píxeles */
+
+    height: auto;  /* Mantiene la relación de aspecto */
+    
+}

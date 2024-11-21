@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
     <!-- Botones de acceso -->
     <div class="access-buttons">
         <button onclick="window.location.href='registro.html'">Registrarse</button>
@@ -16,6 +17,8 @@
     <!-- Header -->
     <header class="header">
         <h1>JOINIT</h1>
+        <img src="imagenes/logo.jpg" alt="Evento 1">
+  
         <div class="header-buttons">
             <button>Ciudad</button>
             <button>Barrio</button>
@@ -29,23 +32,38 @@
         <h2>Eventos Destacados</h2>
         <div class="event-grid">
             <!-- Ejemplo de evento -->
-            <div class="event-card">
+            <div class="event-card" onclick="redirigirARegistro('evento1')">
                 <img src="imagenes/evento1.jpg" alt="Evento 1">
                 <h3>Torneo de Fútbol</h3>
-                <p>cancha norte | 2024-11-25</p>
+                <p><strong>Fecha:</strong> 2024-11-25 <br>
+                   <strong>Hora:</strong> 10:00 AM <br>
+                   <strong>Ubicación:</strong> Cancha Norte</p>
+                <div class="event-details">
+                    <p><strong>Participantes:</strong> 10 / 50</p>
+                    <p><strong>Cupos Disponibles:</strong> 40</p>
+                </div>
             </div>
-            <div class="event-card">
+
+            <div class="event-card" onclick="redirigirARegistro('evento2')">
                 <img src="imagenes/evento2.jpg" alt="Evento 2">
-                <h3>encuentro cultural</h3>
-                <p>parque ospina | 2024-11-28</p>
+                <h3>Encuentro Cultural</h3>
+                <p><strong>Fecha:</strong> 2024-11-28 <br>
+                   <strong>Hora:</strong> 4:00 PM <br>
+                   <strong>Ubicación:</strong> Parque Ospina</p>
+                <div class="event-details">
+                    <p><strong>Participantes:</strong> 20 / 100</p>
+                    <p><strong>Cupos Disponibles:</strong> 80</p>
+                </div>
             </div>
-            <!-- Agrega más eventos aquí -->
+            <!-- Más eventos -->
         </div>
     </main>
 
-    
+    <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 Experiencias y Calificaciones | Contacto: soporte@expcal.com</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
